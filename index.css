@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    width: 100%;
+    height: auto;
+    overflow:hidden ;
+    position: relative;
+}
+
+nav{
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: brightness(100%);
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container .logo img{
+    width: 140px;
+    height: 50px;
+}
+
+.nav-container .links a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: #fca61f;
+    text-shadow: 1px 1px #fca61f ;
+}
+
+nav button{
+    width: 150px;
+    height: 40px;
+    border-radius:20px;
+    background-color: #fca61f;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s linear;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px #fca61f;
+    border: none;
+    outline: none;
+}
+
+nav button:hover{
+    background-color:white;
+    color: #fca61f;
+    border:2px solid #fca61f;
+}
+
+nav svg{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .dropmenu{
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    transform: translateY(-300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s linear;
+}
+
+.dropmenu a{
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
