@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:white;
+    background-color:black;
     width: 100%;
     height: auto;
     overflow:hidden ;
@@ -14,7 +14,6 @@ body{
 }
 
 nav{
-    z-index: 4;
     position: sticky;
     top: 0;
     width: 100%;
@@ -25,56 +24,49 @@ nav{
 .nav-container{
     width: 100%;
     height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.nav-container .logo img{
-    width: 140px;
-    height: 50px;
-}
+
 
 .nav-container .links a{
     font-size: 1.3rem;
-    color: black;
+    color: aliceblue;
     text-decoration: none;
     margin: 0 20px;
     transition: 0.3s linear;
 }
 
 .nav-container .links a:hover{
-    color: #fca61f;
-    text-shadow: 1px 1px #fca61f ;
+    color: #fe482b;
+    text-shadow: 1px 1px #fe482b ;
 }
 
 nav button{
     width: 150px;
     height: 40px;
     border-radius:20px;
-    background-color: #fca61f;
+    background-color: #fe482b;
     color: white;
     font-size: 1.2rem;
     transition: 0.3s linear;
     font-weight: 700;
-    box-shadow: 1px 1px 10px #fca61f;
+    box-shadow: 1px 1px 10px #fe482b;
     border: none;
     outline: none;
 }
 
 nav button:hover{
-    background-color:white;
-    color: #fca61f;
-    border:2px solid #fca61f;
+    background-color:black;
+    color: #fe482b;
+    border:2px solid #fe482b;
 }
 
-nav svg{
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    cursor: pointer;
-    display: none;
-}
+
 
 nav .dropmenu{
     position: absolute;
@@ -94,7 +86,7 @@ nav .dropmenu{
     font-size: 1.4rem;
     text-align: center;
     width: 100%;
-    color: black;
+    color: white;
     padding: 10px 0;
     text-decoration: none;
     transition: 0.3s linear;
@@ -115,41 +107,70 @@ section .content{
 }
 
 .main-content h1{
-    font-size: clamp(2rem, 1rem + 5vw, 6rem);
+    font-size: 100px;
+    color: aliceblue;
+    margin-top: 15%;
+   
 }
 
 .main-content span{
-    font-size: clamp(2rem, 1rem + 5vw, 6rem);
+    font-size: 100px;
     font-weight: 700;
-    color: #fca61f;
+    color: #fe482b;
 }
 
 .main-content p{
-    font-size: clamp(1rem, 1rem + 5vw, 1.2rem);
+    font-size: 30px;
+    color: aliceblue;
 }
-
+/* Hide me and see my work */
 .main-content .buttons{
     width: 70%;
-    margin: 5%;
+   margin-top: 10%;
     min-height: 5.5vh;
     display: flex;
-    justify-content: space-around;
+    
 }
 
 .main-content .buttons button{
     width: 160px;
     margin: 0 10px;
     border-radius: 20px;
-    background: #fca61f;
+    background: #fe482b;
     color: white;
     border: none;
     outline: none;
     font-size: 1.1rem;
     font-weight: 700;
     transform: 0.2s linear;
+    
 }
 
 .buttons button:hover{
-    box-shadow: 2px 2px 30px #fca61f;
+    box-shadow: 2px 2px 30px #fe482b;
+}
+.content .image{
+    width: 50%;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
 }
 
+.image img{
+    margin-top: 40px;
+    width: 500px;
+    filter: drop-shadow(0 0 400px #fe482b);
+}
+.image p {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 60%;
+    padding-right: 10%;
+    
+}
+.section h1{
+    color: #fe482b;
+    text-align: center;
+    
+}
+ 

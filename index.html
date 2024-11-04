@@ -16,8 +16,6 @@
                 <a href="">Compétences</a>
             </div>
             <button>Contact</button>
-            <svg xmlns="http://www.w3.org/2000/svg" class="hamburg" height="32" width="34" viewBox="0 0 448 512">
-            </svg>
         </div>
     </nav>
     <section>
@@ -33,11 +31,33 @@
             </div>
             <div class="image">
                 <img src="" data-aos="zoom-out" data-aos-duration="2000" alt="Profile Picture">
+                <p>
+                    Je suis un développeur passionné par la création de solutions web modernes et interactives <br> Mon objectif professionnel est de devenir un expert en développement front-end et de créer des expériences utilisateur innovantes et accessibles <br> Ce qui me passionne dans le développement <br> c'est la combinaison de la logique et de la créativité, qui permet de transformer des idées en réalités numériques <br> J'aime particulièrement travailler sur des projets qui stimulent l'apprentissage et m'incitent à maîtriser de nouvelles technologies et approches de design.
+                </p>
             </div>
+          <section class="Mes Projets">
+            <div class="countainer prj">
+            <h1>Mais Projets</h1>
+        </div>
+          </section>
         </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+     <script>
+        const hamburg = document.querySelector('.hamburg')
+        const cancel = document.querySelector('.cancel')
+        const navbar = document.querySelector('.dropmenu');
+        
+        hamburg.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(0px)"
+            hamburg.style.display = 'none'
+        })
+        cancel.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(-300px)"
+            hamburg.style.display = 'block'
+        })
     </script>
 </body>
