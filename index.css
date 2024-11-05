@@ -1,39 +1,37 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    background-color:black;
+body {
+    background-color: black;
     width: 100%;
     height: auto;
-    overflow:hidden ;
-    position: relative;
+    /* overflow: hidden; */
 }
 
-nav{
+header nav {
     position: sticky;
     top: 0;
     width: 100%;
     height: 10vh;
     backdrop-filter: brightness(100%);
-}
-
-.nav-container{
-    width: 100%;
-    height: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
-
-.nav-container .links a{
+.links a {
     font-size: 1.3rem;
     color: aliceblue;
     text-decoration: none;
@@ -41,136 +39,427 @@ nav{
     transition: 0.3s linear;
 }
 
-.nav-container .links a:hover{
+.links a:hover {
     color: #fe482b;
-    text-shadow: 1px 1px #fe482b ;
+    text-shadow: 1px 1px #fe482b;
 }
 
-nav button{
+nav button {
     width: 150px;
     height: 40px;
-    border-radius:20px;
+    border-radius: 20px;
     background-color: #fe482b;
     color: white;
     font-size: 1.2rem;
-    transition: 0.3s linear;
     font-weight: 700;
+    transition: 0.3s linear;
     box-shadow: 1px 1px 10px #fe482b;
     border: none;
     outline: none;
 }
 
-nav button:hover{
-    background-color:black;
+nav button:hover {
+    background-color: black;
     color: #fe482b;
-    border:2px solid #fe482b;
+    border: 2px solid #fe482b;
 }
 
-
-
-nav .dropmenu{
-    position: absolute;
-    top: 0;
-    backdrop-filter: blur(2px);
+.content {
     width: 100%;
-    height: auto;
-    transform: translateY(-300px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.3s linear;
-}
-
-.dropmenu a{
-    font-size: 1.4rem;
-    text-align: center;
-    width: 100%;
-    color: white;
-    padding: 10px 0;
-    text-decoration: none;
-    transition: 0.3s linear;
-}
-section .content{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.content .main-content{
+.main-content {
     width: 50%;
     display: flex;
     flex-direction: column;
     margin: 0 10%;
 }
 
-.main-content h1{
+.main-content h1 {
     font-size: 100px;
     color: aliceblue;
     margin-top: 15%;
-   
 }
 
-.main-content span{
+.main-content span {
     font-size: 100px;
     font-weight: 700;
     color: #fe482b;
 }
 
-.main-content p{
+.main-content p {
     font-size: 30px;
     color: aliceblue;
 }
-/* Hide me and see my work */
-.main-content .buttons{
+
+.buttons {
     width: 70%;
-   margin-top: 10%;
-    min-height: 5.5vh;
+    margin-top: 10%;
     display: flex;
-    
+    gap: 10px;
 }
 
-.main-content .buttons button{
+.buttons button {
     width: 160px;
-    margin: 0 10px;
+    padding: 10px 20px;
     border-radius: 20px;
     background: #fe482b;
     color: white;
     border: none;
-    outline: none;
-    font-size: 1.1rem;
+    font-size: 1rem; 
     font-weight: 700;
-    transform: 0.2s linear;
-    
+    text-align: center;
+    transition: 0.2s linear;
+    cursor: pointer;
+    line-height: 1.2;
 }
-
-.buttons button:hover{
+.btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+.btns button {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.buttons button:hover {
     box-shadow: 2px 2px 30px #fe482b;
 }
-.content .image{
+
+.image {
     width: 50%;
     display: flex;
-    margin-top: 5px;
     justify-content: center;
+    border-radius: 50%;
 }
 
-.image img{
-    margin-top: 40px;
+.image img {
     width: 500px;
-    filter: drop-shadow(0 0 400px #fe482b);
+    /* filter: drop-shadow(0 0 400px #fe482b); */
 }
-.image p {
-    color: aliceblue;
-    text-align: center;
-    padding-top: 60%;
-    padding-right: 10%;
-    
-}
-.section h1{
+
+.mes_projets {
     color: #fe482b;
     text-align: center;
-    
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
 }
- 
+
+.container_prj {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project_card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px WHITE ;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px;
+}
+
+.project_card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.project_card h2 {
+    color: white;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.project_card p {
+    padding: 0 15px 15px;
+    color: white;
+}
+
+.project_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(244, 7, 7, 0.2);
+}
+
+.container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.competences_title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.competence {
+    margin-bottom: 30px;
+}
+
+.skill p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.progress_bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin: 5px 0 15px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #fe482b;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* Container styling */
+.container_prj {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Card styling */
+.project-card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #555;
+}
+
+.card-content p strong {
+    color: #007bff;
+}
+.image {
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    /* box-shadow: 0px 1px 5px rgba(228, 24, 24, 0.5); */
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+/* Container styling */
+.container_prj {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Card styling */
+.project-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-content span {
+    display: inline-block;
+    margin: 0 5px;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* Button styling */
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btns button {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btns button:hover {
+    background-color: #ff784e;
+}
+.test-card{
+    text-align: start;
+}
+.class-for-all{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container and Title */
+.MesCompetences {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.competences-title {
+    font-size: 2.5rem;
+    color: #fe482b;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.competence h2 {
+    font-size: 1.8rem;
+    color: #fe482b;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Skills Section */
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill p {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    width: 70%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #fe482b;
+    color: #fff;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+    line-height: 25px;
+}
+.inninner-title{
+    margin-bottom: 20px;
+}
+
+.parente-competence{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+}
+.container11 h1{ 
+    color: #fe482b;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.icons  {
+    display: flex;
+    align-items: center;
+justify-content: center;
+gap: 20px;
+}

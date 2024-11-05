@@ -1,63 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
+  <header class="class-for-all">
     <nav>
-        <div class="nav-container">
-            <div class="links">
-                <a href="">Accueil</a>
-                <a href="">Projets</a>
-                <a href="">Compétences</a>
-            </div>
-            <button>Contact</button>
+      <div class="nav-container">
+        <div class="links">
+          <a href="">Accueil</a>
+          <a href="">Projets</a>
+          <a href="">Compétences</a>
         </div>
+        <button>Contact</button>
+      </div>
     </nav>
-    <section>
-        <div class="content">
-            <div class="main-content">
-                <h1 data-aos="fade-right" data-aos-duration="1500">Hi! I Am</h1>
-                <span data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Berrouk Salma.</span>
-                <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400">Développeur Web Full-Stack</p>
-                <div class="buttons">
-                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">Hire me</button>
-                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">See my Work</button>
-                </div>
-            </div>
-            <div class="image">
-                <img src="" data-aos="zoom-out" data-aos-duration="2000" alt="Profile Picture">
-                <p>
-                    Je suis un développeur passionné par la création de solutions web modernes et interactives <br> Mon objectif professionnel est de devenir un expert en développement front-end et de créer des expériences utilisateur innovantes et accessibles <br> Ce qui me passionne dans le développement <br> c'est la combinaison de la logique et de la créativité, qui permet de transformer des idées en réalités numériques <br> J'aime particulièrement travailler sur des projets qui stimulent l'apprentissage et m'incitent à maîtriser de nouvelles technologies et approches de design.
-                </p>
-            </div>
-          <section class="Mes Projets">
-            <div class="countainer prj">
-            <h1>Mais Projets</h1>
+  </header>
+  <section class="class-for-all">
+    <div class="content">
+      <div class="main-content">
+        <h1 data-aos="fade-right" data-aos-duration="1500">Hi! I Am</h1>
+        <span data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Salma Berrouk.</span>
+        <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400">
+          Développeur Web Full-Stack
+        </p>
+        <div class="buttons">
+          <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
+            Hire me
+          </button>
+          <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
+            See my Work
+          </button>
         </div>
-          </section>
+      </div>
+      <div class="image">
+        <img src="./my pic.jpg" data-aos="zoom-out" data-aos-duration="2000" alt="Profile Picture" />
+      </div>
+    </div>
+  </section>
+  <section class="MesProjets">
+    <h1 class="mes_projets">Mes Projets</h1>
+    <div class="container_prj">
+      <div class="project-card">
+        <img src="./images/380317671-7ef06fca-0160-4c46-8b1b-93891157ccbf.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
         </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-     <script>
-        const hamburg = document.querySelector('.hamburg')
-        const cancel = document.querySelector('.cancel')
-        const navbar = document.querySelector('.dropmenu');
-        
-        hamburg.addEventListener('click', ()=>{
-            navbar.style.transform = "translateY(0px)"
-            hamburg.style.display = 'none'
-        })
-        cancel.addEventListener('click', ()=>{
-            navbar.style.transform = "translateY(-300px)"
-            hamburg.style.display = 'block'
-        })
-    </script>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 225713.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS </span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+
+  <section class="MesCompetences">
+    <div class="container">
+      <h1 class="competences-title">Mes Compétences</h1>
+      <div class="parente-competence">
+        <div class="competence">
+          <h2>Langages de Programmation</h2>
+          <div class="skill">
+            <p>HTML</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;">90%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>CSS</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;">85%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%;">75%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="competence">
+          <h2>Frameworks et Bibliothèques</h2>
+          <div class="skill">
+            <p>Tailwind CSS</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;">80%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Bootstrap</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="competence">
+          <h2>Outils et Technologies</h2>
+          <div class="skill">
+            <p>Git</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;">85%</div>
+            </div>
+          </div>
+        </div>
+        <div class="competence">
+          <h2>Outils et Technologies</h2>
+          <div class="skill">
+            <p>visual studo </p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;">90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="Contact">
+    <div class="container11">
+    <h1>Contact</h1>
+    </div>
+    <div class="icons">
+      <img src="./images/linkdin.svg" alt="github" width="50">
+      <img src="./images/github.svg" alt="linkdin" width="50">
+    </div>
+
+  </section>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
+</html>
