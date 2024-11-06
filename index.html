@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,29 +13,25 @@
     <nav>
       <div class="nav-container">
         <div class="links">
-          <a href="">Accueil</a>
-          <a href="">Projets</a>
-          <a href="">Compétences</a>
+          <a href="#accueil">Accueil</a>
+          <a href="#mes_projets">Projets</a>
+          <a href="#MesCompetences">Compétences</a>
         </div>
-        <button>Contact</button>
+        <button onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
       </div>
     </nav>
   </header>
-  <section class="class-for-all">
+
+  <!-- Accueil Section -->
+  <section id="accueil" class="class-for-all">
     <div class="content">
       <div class="main-content">
         <h1 data-aos="fade-right" data-aos-duration="1500">Hi! I Am</h1>
         <span data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Salma Berrouk.</span>
-        <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400">
-          Développeur Web Full-Stack
-        </p>
+        <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400">Développeur Web Full-Stack</p>
         <div class="buttons">
-          <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
-            Hire me
-          </button>
-          <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
-            See my Work
-          </button>
+          <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">Hire me</button>
+          <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">See my Work</button>
         </div>
       </div>
       <div class="image">
@@ -44,53 +39,21 @@
       </div>
     </div>
   </section>
-  <section class="MesProjets">
-    <h1 class="mes_projets">Mes Projets</h1>
+
+  <!-- Projets Section -->
+  <h1 class="mes_projets">Mes Projets</h1>
+  <section id="mes_projets">
+    <h2>Projets</h2>
     <div class="container_prj">
+      <!-- Example of one project card; repeat as needed -->
+       
       <div class="project-card">
         <img src="./images/380317671-7ef06fca-0160-4c46-8b1b-93891157ccbf.png" alt="Project 1" />
         <div class="card-content">
           <div class="test-card">
             <h2>Project Title 1</h2>
-            <p>
-              Brief description of Project 1, highlighting its main features
-              and objectives.
-            </p>
-            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
-          </div>
-          <div class="buttons btns">
-            <button>Demo</button>
-            <button>Code</button>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
-        <div class="card-content">
-          <div class="test-card">
-            <h2>Project Title 1</h2>
-            <p>
-              Brief description of Project 1, highlighting its main features
-              and objectives.
-            </p>
-            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
-          </div>
-          <div class="buttons btns">
-            <button>Demo</button>
-            <button>Code</button>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="./images/Screenshot 2024-11-04 225713.png" alt="Project 1" />
-        <div class="card-content">
-          <div class="test-card">
-            <h2>Project Title 1</h2>
-            <p>
-              Brief description of Project 1, highlighting its main features
-              and objectives.
-            </p>
-            <span> HTML</span><span> CSS </span>
+            <p>Brief description of Project 1, highlighting its main features and objectives.</p>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
           </div>
           <div class="buttons btns">
             <button>Demo</button>
@@ -149,13 +112,80 @@
           </div>
         </div>
       </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./images/Screenshot 2024-11-04 224058.png" alt="Project 1" />
+        <div class="card-content">
+          <div class="test-card">
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1, highlighting its main features
+              and objectives.
+            </p>
+            <span> HTML</span><span> CSS</span> <span> JavaScript</span>
+          </div>
+          <div class="buttons btns">
+            <button>Demo</button>
+            <button>Code</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat project-card div as needed for additional projects -->
     </div>
   </section>
 
-  </section>
-
-
-  <section class="MesCompetences">
+  <!-- Compétences Section -->
+  <section id="MesCompetences" class="MesCompetences">
     <div class="container">
       <h1 class="competences-title">Mes Compétences</h1>
       <div class="parente-competence">
@@ -196,6 +226,7 @@
             </div>
           </div>
         </div>
+
         <div class="competence">
           <h2>Outils et Technologies</h2>
           <div class="skill">
@@ -204,35 +235,39 @@
               <div class="progress" style="width: 85%;">85%</div>
             </div>
           </div>
-        </div>
-        <div class="competence">
-          <h2>Outils et Technologies</h2>
           <div class="skill">
-            <p>visual studo </p>
+            <p>Visual Studio</p>
             <div class="progress-bar">
-              <div class="progress" style="width: 85%;">90%</div>
+              <div class="progress" style="width: 90%;">90%</div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="Contact">
+
+  <!-- Contact Section -->
+  <section id="contact" class="Contact">
     <div class="container11">
-    <h1>Contact</h1>
+      <h1>Contact</h1>
     </div>
     <div class="icons">
-      <img src="./images/linkdin.svg" alt="github" width="50">
-      <img src="./images/github.svg" alt="linkdin" width="50">
+      <a href="https://www.linkedin.com/in/salma-berrouk-703892233/" target="_blank">
+        <img src="./images/linkdin.svg" alt="LinkedIn" width="50">
+      </a>
+      <a href="https://github.com/Berrouk-Salma" target="_blank">
+        <img src="./images/github.svg" alt="GitHub" width="50">
+      </a>
+      <a href="https://www.instagram.com/salma_berrouk_/?hl=fr" target="_blank">
+        <img src="./images/instagram.png" alt="instagram" width="50">
+      </a>
     </div>
-
   </section>
 
-
+  <!-- AOS Animation Script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 </body>
-
 </html>
